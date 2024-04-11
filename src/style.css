@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #eae9e9;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #151515;
+    border: 1px solid #151515;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: 0;
+    height: 60px;
+    align-self: center;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #151515;
+    color: white;
+    transition: 0.5s;
+}
+
+h1, h2, h3, .latest .text-latest, label, input::placeholder, textarea::placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #eae9e9;
+    align-items: stretch;
+    gap: 10px;
+    height: 100%;
+}
+
+.header, .section-descriptor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: #151515;
+    padding: 20px 40px;
+    border-radius: 70px;
+}
+
+.page-wrapper hr {
+    display: block;
+    background: #cecece;
+    border: 0;
+    width: 100%;
+    height: 1px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side ul li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: white;
+    display: block;
+    margin: 2px;
+}
+
+.right-side ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.generator-inner {
+    display: flex;
+    height: 85%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.color-palette {
+    display: flex; 
+    flex: 1 1 auto;
+}
+
+.color, .color-container {
+    min-width: 80px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    flex: 1 1 auto;
+}
+
+.color {
+    height: 100%;
+}
+
+.add-button {
+    align-self: center;
+    background-color: #cecece;
+    border-radius: 50%;
+    border: none;
+}
+
+.add-button:hover {
+    background-color: #a2a2a2;
+}
+
+.selected-colors {
+  text-align: center;
+  color: #151515;
+}
+
+.selected-color {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.body-upper {
+    display: flex;
+    justify-content: space-evenly;
+}
