@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>
     <title>Colorette</title>
 </head>
 <body>
@@ -28,12 +29,14 @@
         </div>
         <div class="body-upper">
             <button id="update" class="update">Update palette</button>
+            <div class="middle"><h2>Selected Colors</h2>
             <div class="selected-colors">
-                <h2>Selected Colors</h2>
                 <div class="selected-color"></div>
                 <div class="selected-color"></div>
                 <div class="selected-color"></div>
-            </div>
+            </div></div>
+            
+            <button id="download" class="update">Download palette</button>
         </div>
         
         <div class="generator-inner">
@@ -42,8 +45,9 @@
                 <div class="color-container"></div>
             <!-- add more colors here -->
             </div>
-            <button id="add-button" class="add-button"></button>
+            <button id="add-button" class="add-button"><i class="fa-regular fa-plus"></i></button>
         </div>
     </div>
 </body>
 </html>
+

@@ -2,7 +2,6 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
 }
 
 html {
@@ -48,10 +47,18 @@ button {
     border-radius: 30px;
 }
 
+
 button:hover {
     background-color: #151515;
     color: white;
     transition: 0.5s;
+}
+
+div input {
+    position: absolute;
+    width: 80px;
+    opacity: 0;
+    cursor: pointer;
 }
 
 h1, h2, h3, .latest .text-latest, label, input::placeholder, textarea::placeholder {
@@ -129,21 +136,26 @@ h1, h2, h3, .latest .text-latest, label, input::placeholder, textarea::placehold
 }
 
 .color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
     height: 100%;
 }
 
 .add-button {
     align-self: center;
-    background-color: #cecece;
-    border-radius: 50%;
+    color: #808080;
     border: none;
 }
 
 .add-button:hover {
-    background-color: #a2a2a2;
+    background-color: transparent;
+    color: #151515;
 }
 
-.selected-colors {
+.selected-colors, .middle {
   text-align: center;
   color: #151515;
 }
